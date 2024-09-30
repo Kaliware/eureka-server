@@ -1,0 +1,7 @@
+spring:
+  config:
+    import: "configserver:"
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_HOST}
+      name: application,eureka-server
