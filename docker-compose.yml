@@ -5,6 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-      CONFIG_SERVER_HOST: ${CONFIG_SERVER_HOST}
+      CONFIG_SERVER_HOST: "${CONFIG_SERVER_HOST:-}"
     ports:
       - "8761:8761"

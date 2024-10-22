@@ -5,6 +5,6 @@ WORKDIR /app
 
 COPY target/*.jar /app/app.jar
 
-ENV CONFIG_SERVER_HOST=${CONFIG_SERVER_HOST}
+ENV CONFIG_SERVER_HOST=
 
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
